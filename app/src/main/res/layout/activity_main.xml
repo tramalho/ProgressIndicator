@@ -27,6 +27,16 @@
             android:layout_alignParentRight="true"
             android:text="next"
             android:onClick="nextClick"
+            android:id="@+id/next_button_id"
     />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_id"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/next_button_id"
+    />
+
 
 </RelativeLayout>
