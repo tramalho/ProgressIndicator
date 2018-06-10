@@ -1,42 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.example.tramalho.progressindicator.MainActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tramalho.progressindicator.MainActivity">
 
     <com.example.tramalho.progressindicator.StepsCustomProgress
-            android:id="@+id/steps_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-    />
+        android:id="@+id/steps_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    <Button android:id="@+id/back_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/steps_id"
-            android:text="back"
-            android:onClick="backClick"
+    <Button
+        android:id="@+id/back_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/steps_id"
+        android:onClick="backClick"
+        android:text="back"
 
-    />
+        />
 
-    <Button android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/steps_id"
-            android:layout_alignParentRight="true"
-            android:text="next"
-            android:onClick="nextClick"
-            android:id="@+id/next_button_id"
-    />
+    <Button
+        android:id="@+id/next_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/steps_id"
+        android:onClick="nextClick"
+        android:text="next" />
 
     <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerview_id"
-            android:layout_marginTop="50dp"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_below="@id/next_button_id"
-    />
+        android:id="@+id/recyclerview_id"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/next_button_id"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/darker_gray" />
 
+
+    <RadioGroup
+        android:layout_margin="10dp"
+        android:id="@+id/rgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerview_id"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/backgroud"
+            android:button="@android:color/transparent"
+            android:padding="5dp"
+            android:text="button 1"
+            android:textAlignment="center"
+            android:textColor="@drawable/color_selector"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroud"
+            android:button="@android:color/transparent"
+            android:padding="5dp"
+            android:text="button 2"
+            android:textAlignment="center"
+            android:textColor="@drawable/color_selector"
+            android:textSize="20sp" />
+
+    </RadioGroup>
 
 </RelativeLayout>

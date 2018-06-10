@@ -6,6 +6,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.RadioButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         rv.setLayoutManager(new GridLayoutManager(this, 2));
 
         rv.setAdapter(new CustomAdapter());
+
+        RadioButton rb1 = findViewById(R.id.button1);
+        rb1.setChecked(true);
     }
 
     public void nextClick(View view) {
