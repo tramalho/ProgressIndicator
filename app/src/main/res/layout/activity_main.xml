@@ -17,7 +17,7 @@
         android:layout_below="@id/steps_id"
         android:onClick="backClick"
         android:text="back"
-
+        style="@style/buttonStyle"
         />
 
     <Button
@@ -27,7 +27,18 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/steps_id"
         android:onClick="nextClick"
-        android:text="next" />
+        android:text="next"
+        style="@style/buttonStyle"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/next_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="habilitar botões"
+        />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerview_id"
