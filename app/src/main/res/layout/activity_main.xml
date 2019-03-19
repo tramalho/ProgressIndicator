@@ -85,4 +85,33 @@
 
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/text_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Texto com Style Habilitado / Desabilitado"
+        android:textColor="@drawable/text_selector"
+        android:layout_below="@id/version_button_id"/>
+
+    <Button
+        android:id="@+id/version_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/steps_id"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="203dp"
+        android:layout_marginRight="30dp"
+        android:onClick="versionClick"
+        android:text="Version" />
+
+    <ImageView
+        android:id="@+id/imageviewId"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/version_button_id"
+        android:layout_width="250dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_height="250dp" />
+
 </RelativeLayout>
